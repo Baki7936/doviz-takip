@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <title>Döviz Takip</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Canlı Döviz Kurları</h1>
+  </header>
+
+  <main>
+    <section id="currency-section">
+      <label for="base-currency">Baz Para Birimi:</label>
+      <select id="base-currency">
+        <option value="USD">USD</option>
+        <option value="EUR">EUR</option>
+        <option value="TRY" selected>TRY</option>
+        <option value="GBP">GBP</option>
+      </select>
+
+      <div id="exchange-rates"></div>
+
+      <canvas id="exchangeChart" width="400" height="200"></canvas>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Döviz Takip Sitesi</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
